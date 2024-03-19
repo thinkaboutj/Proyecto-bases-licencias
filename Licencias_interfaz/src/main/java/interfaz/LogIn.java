@@ -71,8 +71,7 @@ public class LogIn extends javax.swing.JFrame {
         });
         Agrupador.add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, 210, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/colores.jpg"))); // NOI18N
-        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/azulRosa.jpg"))); // NOI18N
         Agrupador.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

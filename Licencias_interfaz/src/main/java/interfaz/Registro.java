@@ -28,7 +28,10 @@ public class Registro extends javax.swing.JFrame {
 
         Agrupador = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -40,23 +43,24 @@ public class Registro extends javax.swing.JFrame {
         jLabel2.setText("Registro");
         Agrupador.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
+        Agrupador.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 260, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-        );
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
+        Agrupador.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 260, -1));
 
-        Agrupador.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 450, 390));
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Usuario:");
+        Agrupador.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/colores.jpg"))); // NOI18N
-        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Constraseña:");
+        Agrupador.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/azulRosa.jpg"))); // NOI18N
         Agrupador.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -112,6 +116,9 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JPanel Agrupador;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
