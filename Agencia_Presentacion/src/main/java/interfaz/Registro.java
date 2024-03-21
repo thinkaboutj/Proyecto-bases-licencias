@@ -41,7 +41,7 @@ public class Registro extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Registro");
-        Agrupador.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
+        Agrupador.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, -1, -1));
 
         jTextField2.setBackground(new java.awt.Color(255, 255, 255));
         Agrupador.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 260, -1));
