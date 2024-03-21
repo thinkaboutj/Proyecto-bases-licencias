@@ -26,21 +26,119 @@ public class Licencias extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Agrupador = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        checkbox1 = new java.awt.Checkbox();
+        checkbox2 = new java.awt.Checkbox();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Agrupador.setBackground(new java.awt.Color(255, 255, 255));
+        Agrupador.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(0, 51, 102));
+
+        jLabel2.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Modulo de Licencias");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(313, 313, 313)
+                .addComponent(jLabel2)
+                .addContainerGap(313, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(15, 15, 15))
+        );
+
+        Agrupador.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 70));
+
+        jButton1.setBackground(new java.awt.Color(0, 51, 102));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Verificar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        Agrupador.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 540, 190, 40));
+
+        jButton4.setBackground(new java.awt.Color(0, 51, 102));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Regresar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        Agrupador.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, 230, 50));
+
+        jLabel4.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("Tipo de tramite:");
+        Agrupador.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 120, -1));
+
+        jLabel5.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setText("Datos del solicitante");
+        Agrupador.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(0, 51, 102));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 20, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 530, Short.MAX_VALUE)
+        );
+
+        Agrupador.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 70, 20, 530));
+
+        checkbox1.setLabel("Renovacion");
+        Agrupador.add(checkbox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, -1, -1));
+
+        checkbox2.setLabel("Primera Vez");
+        Agrupador.add(checkbox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(Agrupador, javax.swing.GroupLayout.DEFAULT_SIZE, 842, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(Agrupador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +176,15 @@ public class Licencias extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Agrupador;
+    private java.awt.Checkbox checkbox1;
+    private java.awt.Checkbox checkbox2;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
