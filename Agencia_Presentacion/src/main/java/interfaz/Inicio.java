@@ -64,6 +64,7 @@ public class Inicio extends javax.swing.JFrame {
         Agrupador.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 51, 102));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Reportes");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +74,7 @@ public class Inicio extends javax.swing.JFrame {
         Agrupador.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 530, 130, 50));
 
         jButton2.setBackground(new java.awt.Color(0, 51, 102));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Licencias");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,6 +84,7 @@ public class Inicio extends javax.swing.JFrame {
         Agrupador.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 350, 130, 50));
 
         jButton3.setBackground(new java.awt.Color(0, 51, 102));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Placas");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,6 +94,7 @@ public class Inicio extends javax.swing.JFrame {
         Agrupador.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 410, 130, 50));
 
         jButton4.setBackground(new java.awt.Color(0, 51, 102));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Consultas");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,6 +123,12 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        
+        Licencias licencia = new Licencias();
+        
+        licencia.setVisible(true);
+        
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
