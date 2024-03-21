@@ -4,10 +4,20 @@
  */
 package DAOS;
 
+import EntidadesJPA.Cliente;
+import javax.persistence.EntityManager;
+
 /**
  *
  * @author SDavidLedesma
  */
-public class ClientesDAO {
+public class ClientesDAO implements IClientesDAO{
+    
+    private EntityManager em;
+
+    @Override
+    public void registrarLicencia(Cliente cliente) {
+    em.persist(cliente);
+    }
     
 }
