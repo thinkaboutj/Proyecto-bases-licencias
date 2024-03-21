@@ -4,10 +4,13 @@
  */
 package DAOS;
 
+import EntidadesJPA.Cliente;
+
 /**
  *
  * @author SDavidLedesma
  */
 public interface IClientesDAO {
     
+    void registrarLicencia(Cliente cliente);
 }
