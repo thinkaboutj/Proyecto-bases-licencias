@@ -29,8 +29,8 @@ public class Licencias extends javax.swing.JFrame {
         Agrupador = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnVerificar = new javax.swing.JButton();
+        btnRegresar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -47,17 +47,17 @@ public class Licencias extends javax.swing.JFrame {
         checkbox4 = new java.awt.Checkbox();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        ComboBoxTipo = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
         checkbox5 = new java.awt.Checkbox();
         checkbox6 = new java.awt.Checkbox();
         checkbox7 = new java.awt.Checkbox();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
+        txtNombre = new javax.swing.JTextField();
+        txtTelefono = new javax.swing.JTextField();
+        txtAPaterno = new javax.swing.JTextField();
+        txtAMaterno = new javax.swing.JTextField();
+        txtRFC = new javax.swing.JTextField();
+        lblVigencia = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -67,16 +67,15 @@ public class Licencias extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        lblNombre = new javax.swing.JLabel();
+        lblApellidoPaterno = new javax.swing.JLabel();
+        lblApellidoMaterno = new javax.swing.JLabel();
+        lblFechaNacimiento = new javax.swing.JLabel();
+        lblRFC = new javax.swing.JLabel();
+        lblTelefono = new javax.swing.JLabel();
+        lblDiscapacidad = new javax.swing.JLabel();
+        lblTipo = new javax.swing.JLabel();
+        btnConfirmar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
@@ -110,25 +109,25 @@ public class Licencias extends javax.swing.JFrame {
 
         Agrupador.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 70));
 
-        jButton1.setBackground(new java.awt.Color(0, 51, 102));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Verificar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnVerificar.setBackground(new java.awt.Color(0, 51, 102));
+        btnVerificar.setForeground(new java.awt.Color(255, 255, 255));
+        btnVerificar.setText("Verificar");
+        btnVerificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnVerificarActionPerformed(evt);
             }
         });
-        Agrupador.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 380, 190, 40));
+        Agrupador.add(btnVerificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 380, 190, 40));
 
-        jButton4.setBackground(new java.awt.Color(0, 51, 102));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Regresar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnRegresar.setBackground(new java.awt.Color(0, 51, 102));
+        btnRegresar.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegresar.setText("Regresar");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnRegresarActionPerformed(evt);
             }
         });
-        Agrupador.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, 230, 50));
+        Agrupador.add(btnRegresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, 230, 50));
 
         jLabel4.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
@@ -216,10 +215,10 @@ public class Licencias extends javax.swing.JFrame {
         jLabel14.setText("Vigencia:");
         Agrupador.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 80, -1));
 
-        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        Agrupador.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 430, 300, -1));
+        ComboBoxTipo.setBackground(new java.awt.Color(255, 255, 255));
+        ComboBoxTipo.setForeground(new java.awt.Color(0, 0, 0));
+        ComboBoxTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        Agrupador.add(ComboBoxTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 430, 300, -1));
 
         jLabel15.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 0, 0));
@@ -238,30 +237,30 @@ public class Licencias extends javax.swing.JFrame {
         checkbox7.setLabel("2 años");
         Agrupador.add(checkbox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, -1, -1));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        Agrupador.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 290, -1));
+        txtNombre.setBackground(new java.awt.Color(255, 255, 255));
+        txtNombre.setForeground(new java.awt.Color(0, 0, 0));
+        Agrupador.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 290, -1));
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        Agrupador.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 290, -1));
+        txtTelefono.setBackground(new java.awt.Color(255, 255, 255));
+        txtTelefono.setForeground(new java.awt.Color(0, 0, 0));
+        Agrupador.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 290, -1));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        Agrupador.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 290, -1));
+        txtAPaterno.setBackground(new java.awt.Color(255, 255, 255));
+        txtAPaterno.setForeground(new java.awt.Color(0, 0, 0));
+        Agrupador.add(txtAPaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 290, -1));
 
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        Agrupador.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 290, -1));
+        txtAMaterno.setBackground(new java.awt.Color(255, 255, 255));
+        txtAMaterno.setForeground(new java.awt.Color(0, 0, 0));
+        Agrupador.add(txtAMaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 290, -1));
 
-        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        Agrupador.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 290, -1));
+        txtRFC.setBackground(new java.awt.Color(255, 255, 255));
+        txtRFC.setForeground(new java.awt.Color(0, 0, 0));
+        Agrupador.add(txtRFC, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, 290, -1));
 
-        jLabel16.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel16.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 340, 120, -1));
+        lblVigencia.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        lblVigencia.setForeground(new java.awt.Color(0, 0, 0));
+        lblVigencia.setText("xxxxxxxxxxxxxxx");
+        Agrupador.add(lblVigencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 330, 120, -1));
 
         jLabel17.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(0, 0, 0));
@@ -296,7 +295,7 @@ public class Licencias extends javax.swing.JFrame {
         jLabel23.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(0, 0, 0));
         jLabel23.setText("Vigencia:");
-        Agrupador.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, 80, -1));
+        Agrupador.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, 80, -1));
 
         jLabel24.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(0, 0, 0));
@@ -308,60 +307,55 @@ public class Licencias extends javax.swing.JFrame {
         jLabel25.setText("Nombre:");
         Agrupador.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 120, -1));
 
-        jLabel26.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel26.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, 120, -1));
+        lblNombre.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        lblNombre.setForeground(new java.awt.Color(0, 0, 0));
+        lblNombre.setText("xxxxxxxxxxxxxxx");
+        Agrupador.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 90, 120, -1));
 
-        jLabel27.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel27.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, 120, -1));
+        lblApellidoPaterno.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        lblApellidoPaterno.setForeground(new java.awt.Color(0, 0, 0));
+        lblApellidoPaterno.setText("xxxxxxxxxxxxxxx");
+        Agrupador.add(lblApellidoPaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, 120, -1));
 
-        jLabel28.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel28.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 150, 120, -1));
+        lblApellidoMaterno.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        lblApellidoMaterno.setForeground(new java.awt.Color(0, 0, 0));
+        lblApellidoMaterno.setText("xxxxxxxxxxxxxxx");
+        Agrupador.add(lblApellidoMaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 150, 120, -1));
 
-        jLabel29.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel29.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 180, 120, -1));
+        lblFechaNacimiento.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        lblFechaNacimiento.setForeground(new java.awt.Color(0, 0, 0));
+        lblFechaNacimiento.setText("xxxxxxxxxxxxxxx");
+        Agrupador.add(lblFechaNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 180, 120, -1));
 
-        jLabel30.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel30.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 210, 120, -1));
+        lblRFC.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        lblRFC.setForeground(new java.awt.Color(0, 0, 0));
+        lblRFC.setText("xxxxxxxxxxxxxxx");
+        Agrupador.add(lblRFC, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 210, 120, -1));
 
-        jLabel31.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel31.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 240, 120, -1));
+        lblTelefono.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        lblTelefono.setForeground(new java.awt.Color(0, 0, 0));
+        lblTelefono.setText("xxxxxxxxxxxxxxx");
+        Agrupador.add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 240, 120, -1));
 
-        jLabel32.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel32.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 270, 120, -1));
+        lblDiscapacidad.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        lblDiscapacidad.setForeground(new java.awt.Color(0, 0, 0));
+        lblDiscapacidad.setText("xxxxxxxxxxxxxxx");
+        Agrupador.add(lblDiscapacidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 270, 120, -1));
 
-        jLabel33.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel33.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 300, 120, -1));
+        lblTipo.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
+        lblTipo.setForeground(new java.awt.Color(0, 0, 0));
+        lblTipo.setText("xxxxxxxxxxxxxxx");
+        Agrupador.add(lblTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 300, 120, -1));
 
-        jLabel34.setFont(new java.awt.Font("Calibri Light", 1, 16)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel34.setText("xxxxxxxxxxxxxxx");
-        Agrupador.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 340, 120, -1));
-
-        jButton2.setBackground(new java.awt.Color(0, 51, 102));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Confirmar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnConfirmar.setBackground(new java.awt.Color(0, 51, 102));
+        btnConfirmar.setForeground(new java.awt.Color(255, 255, 255));
+        btnConfirmar.setText("Confirmar");
+        btnConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnConfirmarActionPerformed(evt);
             }
         });
-        Agrupador.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 540, 190, 40));
+        Agrupador.add(btnConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 540, 190, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/notas (2).png"))); // NOI18N
         Agrupador.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, 20, 20));
@@ -384,11 +378,11 @@ public class Licencias extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnVerificarActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
         // TODO add your handling code here:
         
         Inicio inicio = new Inicio();
@@ -396,11 +390,11 @@ public class Licencias extends javax.swing.JFrame {
         inicio.setVisible(true);
         
         this.dispose();
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnConfirmarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -439,6 +433,10 @@ public class Licencias extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Agrupador;
+    private javax.swing.JComboBox<String> ComboBoxTipo;
+    private javax.swing.JButton btnConfirmar;
+    private javax.swing.JButton btnRegresar;
+    private javax.swing.JButton btnVerificar;
     private java.awt.Checkbox checkbox1;
     private java.awt.Checkbox checkbox2;
     private java.awt.Checkbox checkbox3;
@@ -446,10 +444,6 @@ public class Licencias extends javax.swing.JFrame {
     private java.awt.Checkbox checkbox5;
     private java.awt.Checkbox checkbox6;
     private java.awt.Checkbox checkbox7;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -457,7 +451,6 @@ public class Licencias extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -468,16 +461,7 @@ public class Licencias extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -486,10 +470,19 @@ public class Licencias extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JLabel lblApellidoMaterno;
+    private javax.swing.JLabel lblApellidoPaterno;
+    private javax.swing.JLabel lblDiscapacidad;
+    private javax.swing.JLabel lblFechaNacimiento;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblRFC;
+    private javax.swing.JLabel lblTelefono;
+    private javax.swing.JLabel lblTipo;
+    private javax.swing.JLabel lblVigencia;
+    private javax.swing.JTextField txtAMaterno;
+    private javax.swing.JTextField txtAPaterno;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtRFC;
+    private javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }
