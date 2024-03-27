@@ -147,7 +147,7 @@ public class PlacasExistentes extends javax.swing.JFrame {
         Agrupador.add(txtLinea, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, 290, -1));
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/coche (2).png"))); // NOI18N
-        Agrupador.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 350, 230, 210));
+        Agrupador.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 320, 230, 210));
 
         jLabel6.setFont(new java.awt.Font("Calibri Light", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
